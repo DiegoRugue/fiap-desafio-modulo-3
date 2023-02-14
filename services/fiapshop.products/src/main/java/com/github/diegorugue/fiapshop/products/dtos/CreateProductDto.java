@@ -25,4 +25,20 @@ public class CreateProductDto implements Serializable {
     public Products ToEntity() {
         return new Products(this.name, this.price, this.description, this.imageUri);
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getImageUri() {
+        return imageUri;
+    }
 }

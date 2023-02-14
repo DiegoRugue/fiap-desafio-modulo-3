@@ -14,7 +14,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/api/products")
 public class ProductsController {
     @Autowired
     private ProductsRepository productsRepository;
