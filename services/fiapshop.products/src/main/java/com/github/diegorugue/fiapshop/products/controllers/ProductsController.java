@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/products")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class ProductsController {
     @Autowired
     private ProductsRepository productsRepository;
